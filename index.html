@@ -1,13 +1,4 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Untitled</title>
-  <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,29 +7,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div class="notification-bar" id="notificationBar">
         <span id="notificationMessage"></span>
-        <button class="close-btn" onclick="closeNotification()">âœ–</button>
+        <button class="close-btn" onclick="closeNotification()">✖</button>
     </div>
-
 
     <div class="notification-bar new-year-notif" id="newYearNotif">
-        <span id="newYearMessage">Celebrate Sinhala-Tamil New Year with us! ðŸŽ‰ Click here for auspicious times & rituals!</span>
-        <button class="close-btn" onclick="closeNewYearNotif()">âœ–</button>
+        <span id="newYearMessage">Celebrate Sinhala-Tamil New Year with us! 🎉 Click here for auspicious times & rituals!</span>
+        <button class="close-btn" onclick="closeNewYearNotif()">✖</button>
     </div>
-
 
     <nav>
         <button onclick="showPanel('home')">Home</button>
         <button onclick="showPanel('settings')">Settings</button>
         <button onclick="showPanel('newYear')">Sinhala New Year</button>
         <div class="bell-icon" onclick="showPanel('notifications')">
-            <span class="bell">ðŸ””</span>
+            <span class="bell">🔔</span>
             <span class="notification-count" id="notificationCount">0</span>
         </div>
     </nav>
-
 
     <div class="panel active" id="home">
         <header>
@@ -47,16 +34,15 @@
                 <p>Organize your daily, business, and special tasks!</p>
             </div>
             <div class="theme-toggle" onclick="toggleTheme()">
-                <span id="themeIcon">ðŸ’¡</span>
+                <span id="themeIcon">💡</span>
             </div>
         </header>
-
 
         <div class="notification-controls">
             <button id="soundToggle">Sound: On</button>
             <button id="messageToggle">Messages: On</button>
+            <button id="nakathButton">Get Nakath</button>
         </div>
-
 
         <section class="task-input">
             <h2>Add New Task</h2>
@@ -88,7 +74,6 @@
             </form>
         </section>
 
-
         <section class="task-categories">
             <div class="category-card" id="businessTasks">
                 <h3>Business Tasks</h3>
@@ -102,19 +87,17 @@
                 <h3>Special Tasks</h3>
                 <ul id="specialList"></ul>
             </div>
-            <div class="category-card" id="newYearTasks">
+            <div class="category-card" id capitalismo="newYearTasks">
                 <h3>Sinhala New Year</h3>
                 <ul id="newYearList"></ul>
             </div>
         </section>
     </div>
 
-
     <div class="panel" id="notifications">
         <h2>Notifications</h2>
         <ul id="notificationList"></ul>
     </div>
-
 
     <div class="panel" id="newYear">
         <h2>Sinhala-Tamil New Year Rituals</h2>
@@ -125,7 +108,6 @@
         </select>
         <ul id="nakathList"></ul>
     </div>
-
 
     <div class="panel" id="settings">
         <h3>Settings</h3>
@@ -144,11 +126,9 @@
         <label><input type="checkbox" id="showOnHomepage"> Show Notifications on Mobile Homepage</label>
     </div>
 
-
     <footer>
-        <p>Â© 2025 Task Reminder App. All rights reserved.</p>
+        <p>© 2025 Task Reminder App. All rights reserved.</p>
     </footer>
-
 
     <audio id="notificationSound" src="default.mp3" preload="auto"></audio>
     <audio id="ringtoneSound" src="siren.mp3" preload="auto"></audio>
@@ -161,14 +141,12 @@
     <audio id="newYearSong" src="newyear_song.mp3" preload="auto"></audio>
     <audio id="rabanSound" src="raban.mp3" preload="auto"></audio>
 
-
     <div class="completion-overlay" id="completionOverlay">
         <div class="completion-message">
-            <h2 id="completionText">Congratulations! Your task is completed! â˜º</h2>
+            <h2 id="completionText">Congratulations! Your task is completed! ☺</h2>
             <button onclick="closeCompletionOverlay()">OK</button>
         </div>
     </div>
-
 
     <div class="warning-overlay" id="warningOverlay">
         <div class="warning-message">
@@ -177,10 +155,5 @@
     </div>
 
     <script src="script.js"></script>
-</body>
-</html>#FFBC00
-<!-- partial -->
-  <script  src="./script.js"></script>
-
 </body>
 </html>
